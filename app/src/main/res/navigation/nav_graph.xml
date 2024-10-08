@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login_Page">
+
+    <fragment
+        android:id="@+id/login_Page"
+        android:name="com.example.rfi.fragments.Login_Page"
+        android:label="fragment_login__page"
+        tools:layout="@layout/fragment_login__page" >
+        <action
+            android:id="@+id/action_login_Page_to_admin_home"
+            app:destination="@id/admin_home" />
+        <action
+            android:id="@+id/action_login_Page_to_maker_home"
+            app:destination="@id/maker_home" />
+        <action
+            android:id="@+id/action_login_Page_to_checker_home"
+            app:destination="@id/checker_home" />
+        <action
+            android:id="@+id/action_login_Page_to_approver_home"
+            app:destination="@id/approver_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/admin_home"
+        android:name="com.example.rfi.fragments.Admin_home"
+        android:label="fragment_admin_home"
+        tools:layout="@layout/fragment_admin_home" />
+    <fragment
+        android:id="@+id/maker_home"
+        android:name="com.example.rfi.fragments.Maker_home"
+        android:label="fragment_maker_home"
+        tools:layout="@layout/fragment_maker_home" />
+    <fragment
+        android:id="@+id/checker_home"
+        android:name="com.example.rfi.fragments.Checker_home"
+        android:label="fragment_checker_home"
+        tools:layout="@layout/fragment_checker_home" />
+    <fragment
+        android:id="@+id/approver_home"
+        android:name="com.example.rfi.fragments.Approver_home"
+        android:label="fragment_approver_home"
+        tools:layout="@layout/fragment_approver_home" />
+</navigation>
